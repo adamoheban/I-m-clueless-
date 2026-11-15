@@ -56,6 +56,7 @@
   .src:hover{color:var(--accent)}
   footer{text-align:center;color:var(--muted);font-size:.78rem;padding:2rem 1rem 3rem}
   footer a{color:var(--muted)}
+  .more{display:block;text-align:center;padding:.7rem;color:var(--accent);font-weight:700;font-size:.85rem;text-decoration:none;border-top:1px solid var(--line)}
   .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:3rem}
 </style>
 </head>
@@ -63,7 +64,7 @@
 <div class="hero"><svg viewBox="0 0 800 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><radialGradient id="g1" cx="50%" cy="0%" r="70%"><stop offset="0" stop-color="#ffd23f" stop-opacity=".35"/><stop offset="1" stop-color="#ffd23f" stop-opacity="0"/></radialGradient><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14502f"/><stop offset="1" stop-color="#0b2a1a"/></linearGradient></defs><rect width="800" height="300" fill="url(#g1)"/><g fill="#ffe9a0"><circle cx="120" cy="30" r="5"/><circle cx="145" cy="22" r="5"/><circle cx="170" cy="30" r="5"/><circle cx="630" cy="30" r="5"/><circle cx="655" cy="22" r="5"/><circle cx="680" cy="30" r="5"/></g><path d="M0 300V230Q400 150 800 230V300Z" fill="url(#gr)"/><g transform="translate(400 250)" stroke="#ffffff55" stroke-width="2" fill="none"><path d="M0 0L-120-60L0-120L120-60Z"/></g><g fill="#fff"><rect x="394" y="244" width="12" height="12" transform="rotate(45 400 250)"/><rect x="274" y="184" width="10" height="10" transform="rotate(45 279 189)"/><rect x="514" y="184" width="10" height="10" transform="rotate(45 519 189)"/><rect x="394" y="124" width="10" height="10" transform="rotate(45 399 129)"/></g></svg><header>
   <div class="kicker">Offseason Edition</div>
   <h1>MLB <span>Transaction</span> Wire</h1>
-  <p class="sub">Signings, trades, releases and more, organized by team. Nov 3 – Nov 13, 2026.</p>
+  <p class="sub">Signings, trades, releases and more, organized by team. Oct 31 – Nov 13, 2026. Updated nightly.</p>
   <div class="stats" id="stats"></div>
 </header></div>
 <div class="ticker"><div id="tk"></div></div>
@@ -77,61 +78,17 @@
   Data compiled from <a href="https://www.cbssports.com/mlb/transactions">CBS Sports</a> and <a href="https://espn.com/mlb/transactions">ESPN</a> transaction pages.
   Unofficial fan project. Team badges are original color tags, not official marks.<br>Built with Claude and published with GitHub Pages.
 </footer>
+<script src="data.js"></script>
 <script>
 const TEAMS={ARI:["Arizona Diamondbacks","#A71930"],ATH:["Athletics","#2A6B4F"],ATL:["Atlanta Braves","#CE1141"],BAL:["Baltimore Orioles","#DF4601"],BOS:["Boston Red Sox","#BD3039"],CHC:["Chicago Cubs","#0E3386"],CHW:["Chicago White Sox","#4a4a4a"],CIN:["Cincinnati Reds","#C6011F"],CLE:["Cleveland Guardians","#00385D"],COL:["Colorado Rockies","#4B3B8F"],DET:["Detroit Tigers","#0C2340"],HOU:["Houston Astros","#EB6E1F"],KC:["Kansas City Royals","#004687"],LAA:["Los Angeles Angels","#BA0021"],LAD:["Los Angeles Dodgers","#005A9C"],MIA:["Miami Marlins","#00A3E0"],MIL:["Milwaukee Brewers","#12284B"],MIN:["Minnesota Twins","#002B5C"],NYM:["New York Mets","#FF5910"],NYY:["New York Yankees","#1c2a4a"],PHI:["Philadelphia Phillies","#E81828"],PIT:["Pittsburgh Pirates","#b58b00"],SD:["San Diego Padres","#6b4a2f"],SEA:["Seattle Mariners","#0C2C56"],SF:["San Francisco Giants","#FD5A1E"],STL:["St. Louis Cardinals","#C41E3A"],TB:["Tampa Bay Rays","#092C5C"],TEX:["Texas Rangers","#003278"],TOR:["Toronto Blue Jays","#134A8E"],WAS:["Washington Nationals","#AB0003"]};
 const CBS="https://www.cbssports.com/mlb/transactions",ESPN="https://espn.com/mlb/transactions";
-// [date, team, player, text, source]
-const D=[
-["2026-11-13","BOS","Jake Bauers","Signed as free agent, four-year deal (2027–2030)","c"],
-["2026-11-13","LAA","Tyler Heineman","Signed for 2027, avoids arbitration","c"],
-["2026-11-13","LAA","Sammy Peralta","Signed to a minor league contract","c"],
-["2026-11-12","ATL","Evan Phillips","Signed as free agent, three-year deal (2027–2029)","c"],
-["2026-11-12","ATL","Tyler Freeman","Signed to a minor league contract","c"],
-["2026-11-12","WAS","Kyle Nicolas","Released","c"],
-["2026-11-11","TEX","Chris Martin","Retired","c"],
-["2026-11-11","TEX","Tommy Joseph","Named hitting coach","e"],
-["2026-11-11","MIN","Jose Espada","Signed to a minor league contract","c"],
-["2026-11-11","PHI","Bryan Ramos","Signed to a minor league contract","c"],
-["2026-11-10","DET","Emilio Pagan","Signed as free agent, one-year deal (2027)","c"],
-["2026-11-10","SD","Ryan Weiss","Signed as free agent, one-year deal (2027, option 2028)","c"],
-["2026-11-10","PHI","Brian Navarreto","Signed to a minor league contract","c"],
-["2026-11-09","LAD","Christian Cairo","Acquired off waivers from the Mets","c"],
-["2026-11-09","LAD","Tyler Fitzgerald","Signed to a minor league contract","c"],
-["2026-11-09","NYM","Kyren Paris","Outrighted to the minors","c"],
-["2026-11-09","CLE","Antoine Kelly","Signed to a minor league contract","c"],
-["2026-11-09","PIT","Enmanuel Nunez","Signed to a minor league contract","e"],
-["2026-11-09","TOR","Lazaro Estrada","Signed to a minor league contract","e"],
-["2026-11-06","WAS","Reiver Sanmartin","Traded from San Francisco for RHP Robert Cranz","c"],
-["2026-11-06","WAS","Jacob Young","Signed four-year extension (2027–2030, option 2031)","c"],
-["2026-11-06","WAS","Kyle Nicolas","Designated for assignment","c"],
-["2026-11-06","CLE","Jose Tena","Acquired off waivers from Washington","c"],
-["2026-11-06","DET","Yilber Diaz","Outrighted to the minors","c"],
-["2026-11-06","BOS","Zack Kelly","Refused minor league assignment, became free agent","c"],
-["2026-11-06","KC","Hobie Harris","Signed to a minor league contract","c"],
-["2026-11-06","NYM","Robert Stock","Signed one-year extension (2027)","c"],
-["2026-11-05","CHW","Alec Marsh","Signed to a minor league contract","c"],
-["2026-11-05","TB","Levi Stoudt","Signed to a minor league contract","c"],
-["2026-11-05","TOR","Rudy Martin","Signed to a minor league contract","c"],
-["2026-11-04","KC","Abraham Toro","Declared free agency","c"],
-["2026-11-04","LAD","Tyler Fitzgerald","Declared free agency","c"],
-["2026-11-04","SF","Tristan Beck","Cleared waivers and became a free agent","c"],
-["2026-11-04","SF","Tristan Beck","Signed to play in Korea (LG Twins)","c"],
-["2026-11-04","WAS","Zak Kent","Released","c"],
-["2026-11-04","CIN","Many Ramirez","Signed to a minor league contract","e"],
-["2026-11-03","STL","Eduardo Rivera","Traded from Boston for RHP Juan Garcia","c"],
-["2026-11-03","BOS","Juan Garcia","Traded from St. Louis for LHP Eduardo Rivera","e"],
-["2026-11-03","MIA","Bradley Blalock","Released","c"],
-["2026-11-03","COL","RJ Petit","Returned Rule 5 pick to Detroit","e"],
-["2026-11-03","ARI","Tyler Locklear, Cristian Mena, Andrew Saalfrank","Reinstated from the 60-day IL","e"],
-["2026-11-03","SEA","Jason Kanzler","Named manager","e"]
-];
-const TYPES=[["Signing",/signed|extension|declared/i,"#7CE0A3"],["Trade",/traded|waivers from|acquired/i,"#7CC4FF"],["Release",/released|refused|cleared waivers/i,"#FF8F8F"],["Roster",/outrighted|reinstated|returned/i,"#FFD23F"],["Staff",/named/i,"#D6A8FF"],["Retired",/retired/i,"#C9C9C9"]];
-function typeOf(t){if(/waivers from/i.test(t)||/traded/i.test(t))return TYPES[1];for(const x of TYPES)if(x[1].test(t))return x;return["Move",0,"#ddd"]}
+const TYPES=[["Trade",/traded/i,"#7CC4FF"],["Waivers",/off waivers/i,"#5EE6D6"],["DFA",/designated for assignment/i,"#FF9F5A"],["Released",/^released/i,"#FF8F8F"],["Outright",/outrighted|sent outright|refused|returned|drafted player/i,"#C9A7FF"],["IL",/60-day il|reinstated/i,"#FFD23F"],["Free Agency",/declared free agency|cleared waivers/i,"#B8F26B"],["Signing",/signed|extension/i,"#7CE0A3"],["Qual. Offer",/tendered/i,"#FFB6E1"],["Call-up",/purchased|selected/i,"#9BD1FF"],["Staff",/named/i,"#D6A8FF"],["Retired",/retired/i,"#D0D0D0"]];
+function typeOf(t){for(const x of TYPES)if(x[1].test(t))return x;return["Move",0,"#ddd"]}
 const fmt=d=>new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"});
 let team="ALL",type="ALL",qs="";
 const $=id=>document.getElementById(id);
 const used=[...new Set(D.map(r=>r[1]))].sort((a,b)=>TEAMS[a][0].localeCompare(TEAMS[b][0]));
-$("stats").innerHTML=[[D.length,"Moves"],[used.length,"Teams active"],[D.filter(r=>typeOf(r[3])[0]=="Signing").length,"Signings"],[D.filter(r=>typeOf(r[3])[0]=="Trade").length,"Trades"]].map(s=>`<div class="stat"><b>${s[0]}</b><small>${s[1]}</small></div>`).join("");
+$("stats").innerHTML=[[D.length,"Moves"],[used.length,"Teams"],[D.filter(r=>typeOf(r[3])[0]=="Signing").length,"Signings"],[D.filter(r=>typeOf(r[3])[0]=="Trade").length,"Trades"],[D.filter(r=>typeOf(r[3])[0]=="DFA").length,"DFAs"],[D.filter(r=>typeOf(r[3])[0]=="Free Agency").length,"New free agents"]].map(s=>`<div class="stat"><b>${s[0]}</b><small>${s[1]}</small></div>`).join("");
 function chips(){$("chips").innerHTML=`<button class="chip ${team=="ALL"?"on":""}" data-t="ALL">All teams</button>`+used.map(c=>`<button class="chip ${team==c?"on":""}" data-t="${c}"><i style="background:${TEAMS[c][1]}"></i>${c}</button>`).join("");
 $("types").innerHTML=["ALL",...TYPES.map(t=>t[0])].map(t=>`<button class="t ${type==t?"on":""}" data-y="${t}">${t=="ALL"?"All types":t}</button>`).join("")}
 function render(){
@@ -139,7 +96,7 @@ function render(){
   const rows=D.filter(r=>(team=="ALL"||r[1]==team)&&(type=="ALL"||typeOf(r[3])[0]==type)&&(!q||(r[2]+" "+r[3]+" "+TEAMS[r[1]][0]+" "+r[1]).toLowerCase().includes(q)));
   const by={};rows.forEach(r=>(by[r[1]]=by[r[1]]||[]).push(r));
   const codes=Object.keys(by).sort((a,b)=>by[b].length-by[a].length||TEAMS[a][0].localeCompare(TEAMS[b][0]));
-  $("grid").innerHTML=codes.length?codes.map(c=>`<section class="card" style="--c:${TEAMS[c][1]}"><a class="head" href="teams/${c}.html" style="text-decoration:none;color:inherit"><div class="badge">${c}</div><div><h2>${TEAMS[c][0]}</h2><small>View team page \u2192</small></div><span class="count">${by[c].length}</span></a><ul>${by[c].map(r=>{const t=typeOf(r[3]);return `<li><div class="row1"><span class="p">${r[2]}</span><span class="tag" style="background:${t[2]}">${t[0]}</span><span class="d">${fmt(r[0])}</span></div><div class="tx">${r[3]} · <a class="src" href="${r[4]=="c"?CBS:ESPN}" target="_blank" rel="noopener">${r[4]=="c"?"CBS Sports ↗":"ESPN ↗"}</a></div></li>`}).join("")}</ul></section>`).join(""):`<div class="empty">No moves match.</div>`;
+  $("grid").innerHTML=codes.length?codes.map(c=>`<section class="card" style="--c:${TEAMS[c][1]}"><a class="head" href="teams/${c}.html" style="text-decoration:none;color:inherit"><div class="badge">${c}</div><div><h2>${TEAMS[c][0]}</h2><small>View team page \u2192</small></div><span class="count">${by[c].length}</span></a><ul>${(team=="ALL"&&!q?by[c].slice(0,6):by[c]).map(r=>{const t=typeOf(r[3]);return `<li><div class="row1"><span class="p">${r[2]}</span><span class="tag" style="background:${t[2]}">${t[0]}</span><span class="d">${fmt(r[0])}</span></div><div class="tx">${r[3]} · <a class="src" href="${r[4]=="c"?CBS:ESPN}" target="_blank" rel="noopener">${r[4]=="c"?"CBS Sports ↗":"ESPN ↗"}</a></div></li>`}).join("")}</ul>${team=="ALL"&&!q&&by[c].length>6?`<a class="more" href="teams/${c}.html">See all ${by[c].length} moves \u2192</a>`:""}</section>`).join(""):`<div class="empty">No moves match.</div>`;
 }
 document.addEventListener("click",e=>{const t=e.target.closest("[data-t]"),y=e.target.closest("[data-y]");if(t)team=t.dataset.t;if(y)type=y.dataset.y;if(t||y){chips();render()}});
 $("q").addEventListener("input",e=>{qs=e.target.value;render()});

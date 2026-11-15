@@ -1,0 +1,523 @@
+# Source data. Format: "#YYYY-MM-DD" sets the date, rows are TEAM|PLAYER|TRANSACTION|SOURCE (c=CBS Sports, e=ESPN)
+#2026-11-13
+BOS|Jake Bauers|Signed as Free Agent (2027-2030)(four-year contract)|c
+LAA|Tyler Heineman|Signed (2027)(avoids arbitration)|c
+LAA|Sammy Peralta|Signed to a Minor League Contract|c
+#2026-11-12
+ATL|Evan Phillips|Signed as Free Agent (2027-2029)(three-year contract)|c
+ATL|Tyler Freeman|Signed to a Minor League Contract|c
+WAS|Kyle Nicolas|Released|c
+#2026-11-11
+TEX|Chris Martin|Retired|c
+TEX|Tommy Joseph|Named hitting coach|e
+MIN|Jose Espada|Signed to a Minor League Contract|c
+PHI|Bryan Ramos|Signed to a Minor League Contract|c
+#2026-11-10
+DET|Emilio Pagan|Signed as Free Agent (2027)(one-year contract)|c
+SD|Ryan Weiss|Signed as Free Agent (2027; Opt 2028)(one-year contract)|c
+PHI|Brian Navarreto|Signed to a Minor League Contract|c
+#2026-11-09
+LAD|Christian Cairo|Acquired Off Waivers From NY Mets|c
+LAD|Tyler Fitzgerald|Signed to a Minor League Contract|c
+NYM|Kyren Paris|Outrighted to Minors|c
+CLE|Antoine Kelly|Signed to a Minor League Contract|c
+PIT|Enmanuel Nunez|Signed to a Minor League Contract|e
+TOR|Lazaro Estrada|Signed to a Minor League Contract|e
+#2026-11-06
+WAS|Reiver Sanmartin|Traded From San Francisco (for RHP Robert Cranz)|c
+WAS|Jacob Young|Signed (2027-2030; Opt 2031)(four-year extension)|c
+WAS|Kyle Nicolas|Designated for Assignment|c
+CLE|Jose Tena|Acquired Off Waivers From Washington|c
+DET|Yilber Diaz|Outrighted to Minors|c
+BOS|Zack Kelly|Refused Minor League Assignment - Free Agent|c
+KC|Hobie Harris|Signed to a Minor League Contract|c
+NYM|Robert Stock|Signed (2027)(one-year extension)|c
+#2026-11-05
+CHW|Alec Marsh|Signed to a Minor League Contract|c
+TB|Levi Stoudt|Signed to a Minor League Contract|c
+TOR|Rudy Martin|Signed to a Minor League Contract|c
+#2026-11-04
+KC|Abraham Toro|Declared Free Agency|c
+LAD|Tyler Fitzgerald|Declared Free Agency|c
+SF|Tristan Beck|Cleared Waivers and Became a Free Agent|c
+SF|Tristan Beck|Signed to Play in Korea (LG Twins)|c
+WAS|Zak Kent|Released|c
+CIN|Many Ramirez|Signed to a Minor League Contract|e
+#2026-11-03
+STL|Eduardo Rivera|Traded From Boston (for RHP Juan Garcia)|c
+BOS|Juan Garcia|Traded From St. Louis (for LHP Eduardo Rivera)|e
+MIA|Bradley Blalock|Released|c
+COL|RJ Petit|Returned 2025 Rule 5 pick to Detroit|e
+ARI|Tyler Locklear, Cristian Mena, Andrew Saalfrank|Reinstated from the 60-day IL|e
+SEA|Jason Kanzler|Named manager|e
+#2026-11-02
+ARI|Jesus Sanchez|Declared Free Agency|c
+ARI|Andrew Saalfrank|Removed From 60-Day IL (Left shoulder surgery - out for season)|c
+ARI|Jesus Valdez|Declared Free Agency|c
+ARI|Cristian Mena|Removed From 60-Day IL (Strained right shoulder)|c
+ARI|Tyler Locklear|Removed From 60-Day IL (Fractured right thumb)|c
+ARI|Mike Soroka|Declared Free Agency (mutual option declined)|c
+ARI|Tommy Henry|Declared Free Agency|c
+ARI|Pavin Smith|Refused Minor League Assignment - Free Agent|c
+ARI|Santiago Espinal|Declared Free Agency|c
+ARI|Isaiah Campbell|Declared Free Agency|c
+ATH|Bryan Lavastida|Declared Free Agency|c
+ATH|Johnathan Rodriguez|Declared Free Agency|c
+ATH|Jack Winkler|Declared Free Agency|c
+ATH|Taylor Rashi|Declared Free Agency|c
+ATH|Dallas Keuchel|Declared Free Agency|c
+ATH|Ben Bowden|Declared Free Agency|c
+ATH|Gunnar Hoglund|Removed From 60-Day IL (Left hip surgery - out for season)|c
+ATH|Chad Wallach|Declared Free Agency|c
+ATH|Michael Stefanic|Declared Free Agency|c
+ATH|J.T. Ginn|Removed From 60-Day IL (Right elbow impingement)|c
+ATH|Jeff McNeil|Declared Free Agency (team option declined)|c
+ATH|Luis Severino|Removed From 60-Day IL (Strained right shoulder)|c
+ATH|Tyler Soderstrom|Removed From 60-Day IL (Left hip surgery - out for season)|c
+ATH|Jeffrey Springs|Declared Free Agency (team option declined)|c
+ATH|Jacob Wilson|Removed From 60-Day IL (Left shoulder subluxation)|c
+ATH|Nick Kurtz|Removed From 60-Day IL (Strained right thumb)|c
+ATH|Brian Serven|Declared Free Agency|c
+ATH|Joey Estes|Declared Free Agency|c
+ATH|Justin Sterner|Removed From 60-Day IL (Right knee surgery - out for season)|c
+ATH|Wander Suero|Declared Free Agency|c
+ATH|Brent Rooker|Removed From 60-Day IL (Left knee surgery - out for season)|c
+ATL|Jair Camargo|Declared Free Agency|c
+ATL|Jose Azocar|Declared Free Agency|c
+ATL|Mitchell Parker|Acquired Off Waivers From Washington|c
+ATL|Sandy Leon|Declared Free Agency|c
+ATL|DaShawn Keirsey|Declared Free Agency|c
+ATL|Eric Haase|Declared Free Agency|c
+BAL|Tyler O'Neill|Removed From 60-Day IL (Right shoulder inflammation)|c
+BAL|Codi Heuer|Declared Free Agency|c
+BAL|Philip Abner|Acquired Off Waivers From NY Mets|c
+BAL|Luis Robert|Declared Free Agency (team option declined)|c
+BAL|Yohel Pozo|Refused Minor League Assignment - Free Agent|c
+BAL|Trevor Rogers|Tendered Qualifying Offer|c
+BAL|Ryan Helsley|Removed From 60-Day IL (Right elbow discomfort)|c
+BAL|Ryan Mountcastle|Removed From 60-Day IL (Fractured left foot)|c
+BAL|Ryan Mountcastle|Declared Free Agency (team option declined)|c
+BAL|Dietrich Enns|Declared Free Agency (team option declined)|c
+BAL|Ryan Noda|Declared Free Agency|c
+BAL|Yosver Zulueta|Refused Minor League Assignment - Free Agent|c
+BAL|Joshua White|Acquired Off Waivers From Miami|c
+BAL|Chase Hampton|Acquired Off Waivers From St. Louis|c
+BAL|Bryan Ramos|Declared Free Agency|c
+BAL|Jose Espada|Declared Free Agency|c
+BAL|Jackson Kowar|Declared Free Agency|c
+BAL|Kyle Bradish|Removed From 60-Day IL (Lower abdominal discomfort)|c
+BAL|Heston Kjerstad|Refused Minor League Assignment - Free Agent|c
+BAL|Jordan Westburg|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+BAL|Colin Selby|Declared Free Agency|c
+BAL|Zach Morgan|Acquired Off Waivers From San Francisco|c
+BAL|Leody Taveras|Refused Minor League Assignment - Free Agent|c
+BOS|Eli White|Removed From 60-Day IL (Torn ligament, right foot)|c
+BOS|Kutter Crawford|Removed From 60-Day IL (Recovery from right wrist surgery)|c
+BOS|Tomas Nido|Declared Free Agency|c
+BOS|Zack Kelly|Removed From 60-Day IL (Right elbow inflammation)|c
+BOS|Johan Oviedo|Removed From 60-Day IL (Right elbow strain)|c
+BOS|Jason Delay|Declared Free Agency|c
+BOS|Vinny Capra|Declared Free Agency|c
+BOS|Triston Casas|Removed From 60-Day IL (Recovery from left knee surgery)|c
+BOS|Kyle Keller|Declared Free Agency|c
+BOS|Devin Sweet|Declared Free Agency|c
+BOS|Justin Slaten|Removed From 60-Day IL (Right elbow inflammation)|c
+BOS|Eduardo Rivera|Removed From 60-Day IL (Lumbar strain)|c
+BOS|Hobie Harris|Declared Free Agency|c
+BOS|Eduardo Rivera|Designated for Assignment|c
+BOS|Zack Kelly|Designated for Assignment|c
+CHC|Austin Wynns|Declared Free Agency|c
+CHC|Porter Hodge|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+CHC|Shelby Miller|Removed From 60-Day IL (Recovery from right elbow surgery)|c
+CHC|Seiya Suzuki|Tendered Qualifying Offer|c
+CHC|Tyler Austin|Refused Minor League Assignment - Free Agent|c
+CHC|Clay Holmes|Declared Free Agency (declined player option)|c
+CHC|Cade Horton|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+CHC|Collin Snider|Declared Free Agency|c
+CHC|Phil Maton|Removed From 60-Day IL (Right knee tendinitis)|c
+CHC|Ben Brown|Removed From 60-Day IL (Neck strain - out for season)|c
+CHC|Hunter Harvey|Removed From 60-Day IL (Right triceps inflammation)|c
+CHC|Hunter Harvey|Declared Free Agency (mutual option declined)|c
+CHC|Eduarniel Nunez|Declared Free Agency|c
+CHC|Tyler Austin|Removed From 60-Day IL (Right knee surgery)|c
+CHC|Colin Rea|Declared Free Agency (team option declined)|c
+CHC|Eric Orze|Acquired Off Waivers From Minnesota|c
+CHC|Caleb Thielbar|Declared Free Agency (mutual option declined)|c
+CHC|Greg Jones|Declared Free Agency|c
+CHC|Luis Peralta|Declared Free Agency|c
+CHC|Riley Martin|Removed From 60-Day IL (Left elbow inflammation)|c
+CHC|Chas McCormick|Declared Free Agency|c
+CHC|Justin Steele|Removed From 60-Day IL (Recovery from left elbow surgery)|c
+CHC|Jacob Webb|Signed (2027; Opt 2028)(restructured one-year contract)|c
+CHC|Andrew Wantz|Declared Free Agency|c
+CHW|Joey Wiemer|Declared Free Agency|c
+CHW|Korey Lee|Declared Free Agency|c
+CHW|Jairo Iriarte|Declared Free Agency|c
+CHW|Ky Bush|Outrighted to Minors|c
+CHW|Junior Perez|Refused Minor League Assignment - Free Agent|c
+CHW|Graham Pauley|Acquired Off Waivers From Miami|c
+CHW|Jake Cave|Declared Free Agency|c
+CHW|Tim Elko|Declared Free Agency|c
+CIN|Paxton Schultz|Acquired Off Waivers From Washington|c
+CIN|Pierce Johnson|Declared Free Agency (mutual option declined)|c
+CIN|Garrett Hampson|Declared Free Agency|c
+CIN|Spencer Steer|Removed From 60-Day IL (Sprained right wrist)|c
+CIN|Ivan Johnson|Declared Free Agency|c
+CIN|Darius Vines|Declared Free Agency|c
+CIN|Emilio Pagan|Declared Free Agency (declined player option)|c
+CIN|Eugenio Suarez|Declared Free Agency (mutual option declined)|c
+CIN|Anthony Misiewicz|Declared Free Agency|c
+CIN|Michael Chavis|Declared Free Agency|c
+CIN|Orlando Arcia|Declared Free Agency|c
+CIN|Duncan Davitt|Acquired Off Waivers From San Francisco|c
+CIN|Dominic Fletcher|Declared Free Agency|c
+CLE|George Valera|Declared Free Agency|c
+CLE|Ryan Borucki|Declared Free Agency|c
+CLE|Dom Nunez|Declared Free Agency|c
+CLE|Shawn Armstrong|Declared Free Agency (mutual option declined)|c
+COL|RJ Petit|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+COL|Valente Bellozo|Declared Free Agency|c
+COL|McCade Brown|Removed From 60-Day IL (Right shoulder inflammation)|c
+COL|Ryan Miller|Declared Free Agency|c
+COL|Edouard Julien|Declared Free Agency|c
+COL|Chase Dollander|Removed From 60-Day IL (Strained right elbow)|c
+COL|Patrick Weigel|Declared Free Agency|c
+COL|Weilnton Herrera|Removed From 60-Day IL (Left elbow inflammation)|c
+COL|RJ Petit|Drafted Player Returned to Minors|c
+COL|Blake Adams|Outrighted to Minors|c
+COL|Pierson Ohl|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+COL|Vimael Machin|Declared Free Agency|c
+COL|Eiberson Castellano|Refused Minor League Assignment - Free Agent|c
+COL|Chad Stevens|Refused Minor League Assignment - Free Agent|c
+COL|Conner Capel|Declared Free Agency|c
+COL|Keegan Thompson|Declared Free Agency|c
+COL|Kris Bryant|Removed From 60-Day IL (Lumbar degenerative disc disease)|c
+COL|TJ Shook|Refused Minor League Assignment - Free Agent|c
+COL|Domingo Acevedo|Declared Free Agency|c
+DET|Reese Olson|Removed From 60-Day IL (Labrum surgery, right shoulder)|c
+DET|Matt Vierling|Removed From 60-Day IL (Left adductor strain)|c
+DET|Mike Siani|Declared Free Agency|c
+DET|Sawyer Gipson-Long|Released|c
+DET|Wenceel Perez|Removed From 60-Day IL (Left orbital fracture)|c
+DET|Jacob Waguespack|Signed as Free Agent (2027)(one-year contract)|c
+DET|Corey Julks|Refused Minor League Assignment - Free Agent|c
+DET|Kerry Carpenter|Removed From 60-Day IL (Left foot plantar fasciitis)|c
+DET|Trey Sweeney|Removed From 60-Day IL (Right shoulder strain)|c
+DET|Jack Little|Declared Free Agency|c
+DET|Drew Anderson|Signed (2027)(team option exercised)|c
+DET|Austin Gomber|Declared Free Agency|c
+DET|Trei Cruz|Declared Free Agency|c
+DET|Nick Sandlin|Declared Free Agency|c
+DET|Parker Meadows|Removed From 60-Day IL (Left radius bone fracture/concussion)|c
+DET|Cal Stevenson|Declared Free Agency|c
+DET|Carl Edwards|Declared Free Agency|c
+DET|Yilber Diaz|Designated for Assignment|c
+DET|Bailey Horn|Removed From 60-Day IL (Recovery from left elbow surgery)|c
+DET|Bailey Horn|Released|c
+DET|James Outman|Declared Free Agency|c
+DET|Will Vest|Removed From 60-Day IL (Right posterior elbow stress fracture)|c
+DET|Seby Zavala|Declared Free Agency|c
+DET|Kenley Jansen|Declared Free Agency (team option declined)|c
+HOU|Jake Meyers|Removed From 60-Day IL (Left knee fracture)|c
+HOU|Evan Reifert|Purchased From Minors|c
+HOU|Cesar Salazar|Purchased From Minors|c
+HOU|Braden Shewmake|Declared Free Agency|c
+HOU|Carlos Correa|Removed From 60-Day IL (Left ankle surgery - out for season)|c
+HOU|Roddery Munoz|Purchased From Minors|c
+HOU|CJ Alexander|Declared Free Agency|c
+HOU|Brandon Walter|Removed From 60-Day IL (Recovery from left elbow surgery)|c
+HOU|Cody Bolton|Declared Free Agency|c
+HOU|Isaac Paredes|Signed (2027)(team option exercised)|c
+HOU|Christian Roa|Declared Free Agency|c
+HOU|Jake Meyers|Refused Minor League Assignment - Free Agent|c
+HOU|Cavan Biggio|Declared Free Agency|c
+HOU|Michael Burrows|Removed From 60-Day IL (Right elbow neuritis)|c
+HOU|Brandon Bielak|Declared Free Agency|c
+HOU|Trenton Brooks|Declared Free Agency|c
+KC|Stephen Kolek|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+KC|Scott Alexander|Declared Free Agency|c
+KC|Luinder Avila|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+KC|Alejo Lopez|Declared Free Agency|c
+KC|Alex Lange|Declared Free Agency|c
+KC|Matt Moore|Declared Free Agency|c
+KC|Cole Ragans|Removed From 60-Day IL (Left elbow surgery - out for season)|c
+KC|Luke Little|Declared Free Agency|c
+KC|Nick Mears|Removed From 60-Day IL (Right shoulder impingement)|c
+KC|Vince Velasquez|Declared Free Agency|c
+LAA|Sebastian Rivero|Declared Free Agency|c
+LAA|Alex Faedo|Declared Free Agency|c
+LAA|Dillon Tate|Declared Free Agency|c
+LAA|Rob Kaminsky|Declared Free Agency|c
+LAA|Omar Martinez|Declared Free Agency|c
+LAA|Cade Marlowe|Declared Free Agency|c
+LAA|Shaun Anderson|Declared Free Agency|c
+LAA|Pablo Reyes|Declared Free Agency|c
+LAA|Kaleb Ort|Declared Free Agency|c
+LAA|Yolmer Sanchez|Declared Free Agency|c
+LAD|Ben Casparius|Removed From 60-Day IL (Right shoulder inflammation)|c
+LAD|Jake Cousins|Removed From 60-Day IL (Recovery from right elbow surgery)|c
+LAD|Gavin Stone|Removed From 60-Day IL (Right shoulder inflammation)|c
+LAD|Ryder Ryan|Declared Free Agency|c
+LAD|Yency Almonte|Declared Free Agency|c
+LAD|Cole Irvin|Declared Free Agency|c
+LAD|Chadwick Tromp|Declared Free Agency|c
+LAD|Will Klein|Removed From 60-Day IL (Right elbow discomfort)|c
+LAD|Ryan Fitzgerald|Declared Free Agency|c
+LAD|Charlie Barnes|Declared Free Agency|c
+LAD|Nick Robertson|Declared Free Agency|c
+LAD|Matt Gorski|Declared Free Agency|c
+MIA|William Kempner|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+MIA|Brian Navarreto|Declared Free Agency|c
+MIA|Wikelman Gonzalez|Declared Free Agency|c
+MIA|Logan Driscoll|Declared Free Agency|c
+MIA|Amos Willingham|Declared Free Agency|c
+MIA|Robby Snelling|Removed From 60-Day IL (Left elbow surgery - out for season)|c
+MIA|Cameron Weston|Acquired Off Waivers From NY Mets|c
+MIA|Zach Pop|Declared Free Agency|c
+MIA|Pat Monteverde|Refused Minor League Assignment - Free Agent|c
+MIA|Ronny Henriquez|Removed From 60-Day IL (Recovery from right elbow surgery)|c
+MIA|Andrew Nardi|Removed From 60-Day IL (Left rib cage stress reaction)|c
+MIA|Adam Mazur|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+MIL|Jared Koenig|Refused Minor League Assignment - Free Agent|c
+MIL|Jake Bauers|Tendered Qualifying Offer|c
+MIL|Brian Fitzpatrick|Removed From 60-Day IL (Left elbow strain)|c
+MIL|William Contreras|Signed (2027)(team option exercised)|c
+MIL|Bryse Wilson|Refused Minor League Assignment - Free Agent|c
+MIL|Gerson Garabito|Declared Free Agency|c
+MIL|Jacob Hurtubise|Declared Free Agency|c
+MIL|Ji-Hwan Bae|Declared Free Agency|c
+MIL|Reiss Knehr|Declared Free Agency|c
+MIL|Luis Matos|Declared Free Agency|c
+MIL|Antonio Senzatela|Declared Free Agency (mutual option declined)|c
+MIL|Angel Zerpa|Removed From 60-Day IL (Left elbow surgery - out for season)|c
+MIL|Quinn Priester|Removed From 60-Day IL (Thoracic nerve surgery - out for season)|c
+MIL|Gary Sanchez|Declared Free Agency (mutual option declined)|c
+MIN|Mick Abel|Removed From 60-Day IL (Right elbow inflammation)|c
+MIN|Cole Sands|Removed From 60-Day IL (Right elbow strain)|c
+MIN|Cody Laweryson|Declared Free Agency|c
+MIN|Pablo Lopez|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+MIN|Mike Paredes|Removed From 60-Day IL (Left oblique strain)|c
+MIN|Julian Merryweather|Declared Free Agency|c
+MIN|David Festa|Removed From 60-Day IL (Right shoulder impingement)|c
+MIN|Tristan Gray|Declared Free Agency|c
+MIN|German Marquez|Declared Free Agency|c
+MIN|Ryan Jeffers|Tendered Qualifying Offer|c
+MIN|David Banuelos|Declared Free Agency|c
+MIN|Matt Bowman|Declared Free Agency|c
+MIN|Alex Jackson|Declared Free Agency|c
+MIN|Ron Marinaccio|Declared Free Agency|c
+NYM|Jack Anderson|Acquired Off Waivers From Minnesota|c
+NYM|Xzavion Curry|Declared Free Agency|c
+NYM|Cristian Pache|Refused Minor League Assignment - Free Agent|c
+NYM|Kyren Paris|Designated for Assignment|c
+NYM|Pierson Ohl|Acquired Off Waivers From Colorado|c
+NYM|Reed Garrett|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+NYM|Chris Devenski|Declared Free Agency|c
+NYM|Guillermo Zuniga|Declared Free Agency|c
+NYM|Christian Cairo|Designated for Assignment|c
+NYM|Jorge Polanco|Removed From 60-Day IL (Left ankle bursitis)|c
+NYM|Tylor Megill|Removed From 60-Day IL (Recovery from right elbow surgery)|c
+NYY|Alexander Cornielle|Declared Free Agency|c
+NYY|Fernando Cruz|Removed From 60-Day IL (Right elbow discomfort)|c
+NYY|Marco Luciano|Purchased From Minors|c
+NYY|Jarred Kelenic|Declared Free Agency|c
+NYY|Elijah Morgan|Declared Free Agency|c
+NYY|Kenedy Corona|Declared Free Agency|c
+NYY|Justin Topa|Declared Free Agency|c
+NYY|David Bednar|Tendered Qualifying Offer|c
+NYY|Adam Kloffenstein|Declared Free Agency|c
+NYY|Kervin Castro|Removed From 60-Day IL (Right elbow neuritis)|c
+PHI|Steward Berroa|Declared Free Agency|c
+PHI|Dylan Moore|Declared Free Agency|c
+PHI|Johan Rojas|Removed From 60-Day IL (Right elbow UCL repair)|c
+PHI|Mark Kolozsvary|Declared Free Agency|c
+PHI|Brad Keller|Removed From 60-Day IL (Right elbow UCL tear)|c
+PHI|Brian Keller|Declared Free Agency|c
+PHI|Kirby Snead|Declared Free Agency|c
+PHI|Lou Trivino|Declared Free Agency|c
+PHI|Kolby Allard|Declared Free Agency|c
+PHI|Carter Kieboom|Declared Free Agency|c
+PHI|Brett Harris|Acquired Off Waivers From San Francisco|c
+PHI|Casey Lawrence|Declared Free Agency|c
+PHI|Daniel Robert|Declared Free Agency|c
+PHI|Garrett Stubbs|Refused Minor League Assignment - Free Agent|c
+PHI|Levi Stoudt|Declared Free Agency|c
+PHI|Shay Whitcomb|Acquired Off Waivers From San Francisco|c
+PHI|Tucker Davidson|Declared Free Agency|c
+PHI|Michael Mercado|Declared Free Agency|c
+PHI|Felix Reyes|Removed From 60-Day IL (Fractured right wrist)|c
+PHI|Caleb Kilian|Removed From 60-Day IL (Strained left oblique)|c
+PIT|Grae Kessinger|Declared Free Agency|c
+PIT|Brandon Lowe|Tendered Qualifying Offer|c
+PIT|Endy Rodriguez|Removed From 60-Day IL (Left hip inflammation)|c
+PIT|Robert Hassell|Declared Free Agency|c
+PIT|Josh Palacios|Declared Free Agency|c
+PIT|Akil Baddoo|Acquired Off Waivers From Milwaukee|c
+PIT|Beau Burrows|Declared Free Agency|c
+PIT|Mitch Keller|Removed From 60-Day IL (Right teres major muscle injury)|c
+PIT|C.D. Pelham|Declared Free Agency|c
+PIT|Jose Herrera|Declared Free Agency|c
+PIT|Enmanuel Valdez|Declared Free Agency|c
+PIT|Noah Davis|Declared Free Agency|c
+PIT|Christian Bethancourt|Declared Free Agency|c
+SD|R. Duran|Removed From 60-Day IL (Strained right forearm)|c
+SD|N. Solak|Declared Free Agency|c
+SD|A. Morejon|Tendered Qualifying Offer|c
+SD|B. Hoeing|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+SD|L. Giolito|Removed From 60-Day IL (Right elbow inflammation)|c
+SD|B. Honeywell|Declared Free Agency|c
+SD|L. Giolito|Declared Free Agency (mutual option declined)|c
+SD|H. Crouse|Declared Free Agency|c
+SD|N. Pivetta|Declared Free Agency (team option declined)|c
+SD|O. Cruz|Declared Free Agency|c
+SD|G. Canning|Declared Free Agency (mutual option declined)|c
+SD|L. Gillaspie|Declared Free Agency|c
+SD|M. Andujar|Declared Free Agency (declined mutual option)|c
+SD|E. Villalobos|Declared Free Agency|c
+SD|T. Adcock|Declared Free Agency|c
+SD|T. Ornelas|Declared Free Agency|c
+SD|B. Johnson|Declared Free Agency|c
+SD|Luis Gutierrez|Selected the contract from El Paso (PCL)|e
+SEA|J. Reetz|Declared Free Agency|c
+SEA|N. Davila|Removed From 60-Day IL (SC joint sprain, right shoulder)|c
+SEA|M. Brash|Removed From 60-Day IL (Right lat strain)|c
+SEA|S. Woods Richardson|Declared Free Agency|c
+SEA|M. Toglia|Removed From 60-Day IL (Right shoulder dislocation)|c
+SEA|L. Evans|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+SEA|D. Dunning|Declared Free Agency|c
+SEA|J. Diaz|Declared Free Agency|c
+SEA|C. Emerson|Removed From 60-Day IL (Left wrist tendon inflammation)|c
+SEA|W. Wilson|Refused Minor League Assignment - Free Agent|c
+SEA|W. Wilson|Removed From 60-Day IL (Fractured left thumb)|c
+SEA|A. Ibanez|Declared Free Agency|c
+SEA|J. Nottingham|Declared Free Agency|c
+SEA|L. Raley|Removed From 60-Day IL (Strained left forearm)|c
+SEA|B. Davis|Removed From 60-Day IL (Strained left hamstring)|c
+SEA|P. Wisdom|Refused Minor League Assignment - Free Agent|c
+SEA|Carson Fulmer|Declared Free Agency|c
+SEA|Randy Arozarena|Tendered Qualifying Offer|c
+SEA|Isaac Mattson|Acquired Off Waivers From Pittsburgh|c
+SEA|Stuart Fairchild|Declared Free Agency|c
+SEA|Scott Effross|Declared Free Agency|c
+SEA|Weston Wilson|Refused Minor League Assignment - Free Agent|c
+SEA|Josh Simpson|Refused Minor League Assignment - Free Agent|c
+SF|Joel Kuhnel|Refused Minor League Assignment - Free Agent|c
+SF|Keaton Winn|Removed From 60-Day IL (Right elbow neuritis)|c
+SF|Matt Gage|Declared Free Agency|c
+SF|Matt Chapman|Removed From 60-Day IL (Abdominal strain)|c
+SF|Joel Peguero|Removed From 60-Day IL (Strained left hamstring)|c
+SF|Rafael Devers|Removed From 60-Day IL (Core muscle injury)|c
+SF|Randy Rodriguez|Removed From 60-Day IL (Recovery from right elbow surgery)|c
+SF|Hayden Birdsong|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+SF|Jesus Rodriguez|Removed From 60-Day IL (Right elbow neuritis)|c
+SF|Daniel Susac|Removed From 60-Day IL (Left knee patella fracture)|c
+SF|Adrian Houser|Removed From 60-Day IL (Right forearm strain)|c
+SF|Reiver Sanmartin|Designated for Assignment|c
+SF|Jose Butto|Removed From 60-Day IL (Right arm fatigue)|c
+SF|Trevor McDonald|Removed From 60-Day IL (Right elbow sprain)|c
+SF|Rowan Wick|Removed From 60-Day IL (Recovery from right elbow surgery)|c
+SF|Seth Lonsway|Outrighted to Minors|c
+SF|Casey Schmitt|Removed From 60-Day IL (Left knee meniscus tear)|c
+SF|Blade Tidwell|Removed From 60-Day IL (Sprained right UCL)|c
+SF|Alex Carrillo|Declared Free Agency|c
+SF|Harrison Bader|Removed From 60-Day IL (Left plantar fasciitis)|c
+SF|Darren Baker|Declared Free Agency|c
+SF|Will Brennan|Declared Free Agency|c
+SF|Osleivis Basabe|Declared Free Agency|c
+SF|Eddys Leonard|Declared Free Agency|c
+SF|Carson Whisenhunt|Removed From 60-Day IL (Left elbow sprain)|c
+SF|Wilkin Ramos|Declared Free Agency|c
+SF|Tristan Beck|Released|c
+STL|Zack Thompson|Declared Free Agency|c
+STL|Bligh Madris|Declared Free Agency|c
+STL|Max Rajcic|Removed From 60-Day IL (Right elbow soreness)|c
+TB|Jacob Melton|Removed From 60-Day IL (Strained right hamstring)|c
+TB|Jared Oliva|Declared Free Agency|c
+TB|John Rooney|Declared Free Agency|c
+TB|Nick Madrigal|Refused Minor League Assignment - Free Agent|c
+TB|Edwin Uceta|Removed From 60-Day IL (Right shoulder impingement)|c
+TB|Jack Suwinski|Purchased From Minors|c
+TB|Jon Heasley|Removed From 60-Day IL (Stress reaction in right elbow)|c
+TB|Cam Hill|Declared Free Agency|c
+TB|Cedric Mullins|Declared Free Agency (mutual option declined)|c
+TB|Nick Martinez|Declared Free Agency (declined mutual option)|c
+TB|Austin Slater|Declared Free Agency|c
+TB|Alexander Alberto|Purchased From Minors|c
+TB|Ryan Pepiot|Removed From 60-Day IL (Right hip surgery - out for season)|c
+TB|Blake Sabol|Declared Free Agency|c
+TB|Taylor Walls|Signed (2027)(team option exercised)|c
+TB|Logan Davidson|Declared Free Agency|c
+TB|Jon Heasley|Refused Minor League Assignment - Free Agent|c
+TEX|Josh Sborz|Declared Free Agency|c
+TEX|Kyle Higashioka|Declared Free Agency (team option declined)|c
+TEX|John King|Declared Free Agency|c
+TEX|Marc Church|Declared Free Agency|c
+TEX|Joe Ross|Declared Free Agency|c
+TEX|Jose Butto|Acquired Off Waivers From San Francisco|c
+TEX|Cal Quantrill|Declared Free Agency|c
+TEX|Cole Winn|Removed From 60-Day IL (Right rotator cuff strain)|c
+TEX|Alexis Diaz|Declared Free Agency|c
+TEX|Joc Pederson|Declared Free Agency (declined mutual option)|c
+TEX|Michael Helman|Refused Minor League Assignment - Free Agent|c
+TEX|Cal Quantrill|Removed From 60-Day IL (Right lat strain)|c
+TEX|Jack Leiter|Removed From 60-Day IL (Right ankle posterior imppingement)|c
+TEX|Diego Castillo|Declared Free Agency|c
+TEX|Jose Corniell|Removed From 60-Day IL (Right flexor strain)|c
+TEX|Carter Baumler|Removed From 60-Day IL (Right intercostal strain)|c
+TEX|Luis Curvelo|Declared Free Agency|c
+TEX|Jakob Junis|Declared Free Agency (mutual option declined)|c
+TOR|Anthony Santander|Removed From 60-Day IL (Labrum surgery, left shoulder)|c
+TOR|Tanner Andrews|Declared Free Agency|c
+TOR|Jonatan Clase|Removed From 60-Day IL (Left plantar fasciitis)|c
+TOR|Bowden Francis|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+TOR|Addison Barger|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+TOR|Rudy Martin|Refused Minor League Assignment - Free Agent|c
+TOR|Jake Bloss|Removed From 60-Day IL (Right teres major strain)|c
+TOR|C.J. Stubbs|Declared Free Agency|c
+TOR|Myles Straw|Declared Free Agency (team option declined)|c
+TOR|Cody Ponce|Removed From 60-Day IL (Right knee surgery - out for season)|c
+TOR|CJ Van Eyk|Refused Minor League Assignment - Free Agent|c
+TOR|Daz Cameron|Declared Free Agency|c
+TOR|Jose Berrios|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+WAS|Ken Waldichuk|Removed From 60-Day IL (Left forearm tightness)|c
+WAS|Drew Millas|Removed From 60-Day IL (Left index finger fracture)|c
+WAS|Ken Waldichuk|Refused Minor League Assignment - Free Agent|c
+WAS|Erick Mejia|Declared Free Agency|c
+WAS|Levi Jordan|Declared Free Agency|c
+WAS|Tom Cosgrove|Declared Free Agency|c
+WAS|Jose Tena|Designated for Assignment|c
+WAS|Mitchell Parker|Removed From 60-Day IL (Left elbow sprain)|c
+WAS|Richard Lovelady|Designated for Assignment|c
+WAS|Richard Lovelady|Refused Minor League Assignment - Free Agent|c
+WAS|Liover Peguero|Declared Free Agency|c
+WAS|Buddy Kennedy|Declared Free Agency|c
+WAS|Matt Krook|Declared Free Agency|c
+WAS|PJ Poulin|Removed From 60-Day IL (Left flexor strain)|c
+WAS|PJ Poulin|Refused Minor League Assignment - Free Agent|c
+WAS|Andry Lara|Declared Free Agency|c
+WAS|Matt Waldron|Removed From 60-Day IL (Chest inflammation)|c
+WAS|Richard Loveland|Sent outright to Rochester|e
+#2026-11-01
+ATL|Vidal Brujan|Signed to a Minor League Contract|c
+BOS|Garrett Whitlock|Signed (2027)(team option exercised)|c
+HOU|Evan Reifert|Traded From Tampa Bay (for cash considerations)|c
+LAA|Sammy Peralta|Refused Minor League Assignment - Free Agent|c
+NYM|Eric Wagaman|Refused Minor League Assignment - Free Agent|c
+NYM|Philip Abner|Designated for Assignment|c
+NYM|Cameron Weston|Designated for Assignment|c
+SD|Wandy Peralta|Signed (2027)(exercised player option)|c
+SD|Kyle Hart|Signed (2027)(team option exercised)|c
+STL|Ryne Stanek|Declared Free Agency (team option declined)|c
+TB|Oliver Dunn|Refused Minor League Assignment - Free Agent|c
+WAS|Nate Furman|Traded From San Francisco (for LHP Tony Neubeck)|c
+#2026-10-31
+ATH|Luis Severino|Signed (2027)(exercised player option)|c
+BAL|Colin Selby|Removed From 60-Day IL (Right shoulder surgery - out for season)|c
+BAL|Codi Heuer|Outrighted to Minors|c
+BAL|Colin Selby|Outrighted to Minors|c
+BAL|Albert Suarez|Refused Minor League Assignment - Free Agent|c
+LAA|Jack Kochanowicz|Removed From 60-Day IL (Right elbow surgery - out for season)|c
+MIL|Thomas Pannone|Refused Minor League Assignment - Free Agent|c
+TB|Yandy Diaz|Signed (2027)(team option exercised)|c
+TB|Drew Rasmussen|Signed (2027)(team option exercised)|c
+TEX|Aidan Curry|Purchased From Minors|c
