@@ -1,0 +1,6 @@
+# Free-agent signings with dollar amounts. Format: DATE|TEAM|PLAYER|POS|YEARS|TOTAL_MILLIONS (blank if unknown)|TERMS NOTE|SOURCE LABEL|SOURCE URL
+2026-11-13|BOS|Jake Bauers|1B/OF|4|58|2027 $16M, 2028 $16M, 2029 $15M, 2030 $11M. Reported by ESPN; physical pending.|CBS Sports|https://www.cbssports.com/mlb/news/jake-bauers-contract-red-sox-brewers-mlb-free-agency/
+2026-11-12|ATL|Evan Phillips|RHP|3|35|$11M in 2027 and 2028, $13M in 2029. Announced by the Braves.|MLB.com|https://www.mlb.com/news/evan-phillips-three-year-contract-with-braves
+2026-11-10|DET|Emilio Pagan|RHP|1|11|About $11M, as reported by Jon Heyman. The club had not confirmed the figure when first reported.|MLB.com|https://www.mlb.com/news/emilio-pagan-contract-with-tigers
+2026-11-10|SD|Ryan Weiss|RHP|1|1.85|$1.85M for 2027 plus a 2028 club option ($4M guaranteed, up to $5.5M with bonuses), per ESPN.|MLB.com|https://mlb.com/news/ryan-weiss-contract-with-padres
+2026-11-10|DET|Jacob Waguespack|RHP|1||Dollar terms not reported yet.|CBS Sports|https://www.cbssports.com/mlb/transactions

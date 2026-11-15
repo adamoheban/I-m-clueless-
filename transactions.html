@@ -57,6 +57,8 @@
   footer{text-align:center;color:var(--muted);font-size:.78rem;padding:2rem 1rem 3rem}
   footer a{color:var(--muted)}
   .more{display:block;text-align:center;padding:.7rem;color:var(--accent);font-weight:700;font-size:.85rem;text-decoration:none;border-top:1px solid var(--line)}
+  .navlinks{display:flex;gap:.6rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
+  .navlinks a{background:var(--accent);color:#111;font-weight:800;text-decoration:none;border-radius:999px;padding:.5rem 1.1rem;font-size:.9rem}
   .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:3rem}
 </style>
 </head>
@@ -66,6 +68,7 @@
   <h1>MLB <span>Transaction</span> Wire</h1>
   <p class="sub">Signings, trades, releases and more, organized by team. Oct 31 – Nov 13, 2026. Updated nightly.</p>
   <div class="stats" id="stats"></div>
+  <div class="navlinks"><a href="top-transactions.html">💰 Top Transactions</a><a href="blockbusters.html">💥 Blockbuster Trades</a></div>
 </header></div>
 <div class="ticker"><div id="tk"></div></div>
 <div class="controls">
@@ -87,7 +90,8 @@ function typeOf(t){for(const x of TYPES)if(x[1].test(t))return x;return["Move",0
 const fmt=d=>new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"});
 let team="ALL",type="ALL",qs="";
 const $=id=>document.getElementById(id);
-const used=[...new Set(D.map(r=>r[1]))].sort((a,b)=>TEAMS[a][0].localeCompare(TEAMS[b][0]));
+const ladFirst=(a,b)=>(b=="LAD")-(a=="LAD");
+const used=[...new Set(D.map(r=>r[1]))].sort((a,b)=>ladFirst(a,b)||TEAMS[a][0].localeCompare(TEAMS[b][0]));
 $("stats").innerHTML=[[D.length,"Moves"],[used.length,"Teams"],[D.filter(r=>typeOf(r[3])[0]=="Signing").length,"Signings"],[D.filter(r=>typeOf(r[3])[0]=="Trade").length,"Trades"],[D.filter(r=>typeOf(r[3])[0]=="DFA").length,"DFAs"],[D.filter(r=>typeOf(r[3])[0]=="Free Agency").length,"New free agents"]].map(s=>`<div class="stat"><b>${s[0]}</b><small>${s[1]}</small></div>`).join("");
 function chips(){$("chips").innerHTML=`<button class="chip ${team=="ALL"?"on":""}" data-t="ALL">All teams</button>`+used.map(c=>`<button class="chip ${team==c?"on":""}" data-t="${c}"><i style="background:${TEAMS[c][1]}"></i>${c}</button>`).join("");
 $("types").innerHTML=["ALL",...TYPES.map(t=>t[0])].map(t=>`<button class="t ${type==t?"on":""}" data-y="${t}">${t=="ALL"?"All types":t}</button>`).join("")}
@@ -95,7 +99,7 @@ function render(){
   const q=qs.toLowerCase();
   const rows=D.filter(r=>(team=="ALL"||r[1]==team)&&(type=="ALL"||typeOf(r[3])[0]==type)&&(!q||(r[2]+" "+r[3]+" "+TEAMS[r[1]][0]+" "+r[1]).toLowerCase().includes(q)));
   const by={};rows.forEach(r=>(by[r[1]]=by[r[1]]||[]).push(r));
-  const codes=Object.keys(by).sort((a,b)=>by[b].length-by[a].length||TEAMS[a][0].localeCompare(TEAMS[b][0]));
+  const codes=Object.keys(by).sort((a,b)=>ladFirst(a,b)||by[b].length-by[a].length||TEAMS[a][0].localeCompare(TEAMS[b][0]));
   $("grid").innerHTML=codes.length?codes.map(c=>`<section class="card" style="--c:${TEAMS[c][1]}"><a class="head" href="teams/${c}.html" style="text-decoration:none;color:inherit"><div class="badge">${c}</div><div><h2>${TEAMS[c][0]}</h2><small>View team page \u2192</small></div><span class="count">${by[c].length}</span></a><ul>${(team=="ALL"&&!q?by[c].slice(0,6):by[c]).map(r=>{const t=typeOf(r[3]);return `<li><div class="row1"><span class="p">${r[2]}</span><span class="tag" style="background:${t[2]}">${t[0]}</span><span class="d">${fmt(r[0])}</span></div><div class="tx">${r[3]} · <a class="src" href="${r[4]=="c"?CBS:ESPN}" target="_blank" rel="noopener">${r[4]=="c"?"CBS Sports ↗":"ESPN ↗"}</a></div></li>`}).join("")}</ul>${team=="ALL"&&!q&&by[c].length>6?`<a class="more" href="teams/${c}.html">See all ${by[c].length} moves \u2192</a>`:""}</section>`).join(""):`<div class="empty">No moves match.</div>`;
 }
 document.addEventListener("click",e=>{const t=e.target.closest("[data-t]"),y=e.target.closest("[data-y]");if(t)team=t.dataset.t;if(y)type=y.dataset.y;if(t||y){chips();render()}});

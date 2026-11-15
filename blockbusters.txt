@@ -1,0 +1,2 @@
+# Blockbuster trades. Format: DATE|TEAMS (e.g. LAD,SD)|HEADLINE|DETAILS|SOURCE LABEL|SOURCE URL
+# A trade counts as a blockbuster if it involves a star or All-Star-caliber player, a big multi-year contract, or three or more notable players/prospects changing teams.
