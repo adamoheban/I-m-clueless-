@@ -15,7 +15,7 @@ const a=js.indexOf('const TEAMS='),b=js.indexOf('const fmt=');
 const {TEAMS,TYPES,CBS,ESPN,typeOf}=new Function(js.slice(a,b)+';return {TEAMS,TYPES,CBS,ESPN,typeOf}')();
 const fmt=d=>new Date(d+'T12:00:00').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
 fs.mkdirSync('teams',{recursive:true});
-const codes=Object.keys(TEAMS).sort((x,y)=>TEAMS[x][0].localeCompare(TEAMS[y][0]));
+const codes=Object.keys(TEAMS).sort((x,y)=>(y==='LAD')-(x==='LAD')||TEAMS[x][0].localeCompare(TEAMS[y][0])); // Dodgers always first
 for(const c of codes){
   const [name,color]=TEAMS[c];
   const rows=D.filter(r=>r[1]===c);
