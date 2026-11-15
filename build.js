@@ -122,3 +122,51 @@ const shell=(title,kicker,h1,sub,body)=>`<!DOCTYPE html><html lang="en"><head><m
   fs.writeFileSync('blockbusters.html',shell('Blockbuster Trades','The big ones','Blockbuster <span>Trades</span>','Star-level trades and the biggest deals of the offseason, newest first.',body));
 }
 console.log('built top-transactions.html and blockbusters.html');
+
+// ---------- Lockout Watch page ----------
+{
+  const rows=fs.readFileSync('lockout.txt','utf8').split('\n').filter(l=>l.trim()&&!l.startsWith('#')).map(l=>l.split('|'));
+  const by=t=>rows.filter(r=>r[0]===t).map(r=>r.slice(1));
+  const link=(label,url)=>url?` <a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`:'';
+  const updated=(by('UPDATED')[0]||[''])[0];
+  const st=by('STATUS')[0]||['',''];
+  const deadlines=by('DEADLINE').map(r=>`<li><div class="when">${/^\d{4}-/.test(r[0])?fmt(r[0]).replace(/^\w+, /,''):esc(r[0])}</div><div><b>${esc(r[1])}</b><p>${esc(r[2])}${link(r[3],r[4])}</p></div></li>`).join('');
+  const pts=t=>by(t).map(r=>`<li>${esc(r[0])}${link(r[1],r[2])}</li>`).join('');
+  const offers=by('OFFER').map(r=>`<tr><th>${esc(r[0])}</th><td>${esc(r[1])}</td><td>${esc(r[2])}</td><td>${esc(r[3])}</td></tr>`).join('');
+  const news=by('NEWS').sort((a,b)=>b[0].localeCompare(a[0])).map(r=>`<li><div class="when">${fmt(r[0]).replace(/^\w+, /,'')}</div><div><b>${esc(r[1])}</b><p>${esc(r[2])}${link(r[3],r[4])}</p></div></li>`).join('');
+  const outlook=by('OUTLOOK').map(r=>`<div class="sc"><h4>${esc(r[0])}</h4><p>${esc(r[1])}${link(r[2],r[3])}</p></div>`).join('');
+  const hist=by('HISTORY').map(r=>`<li><b>${esc(r[0])}</b>: ${esc(r[1])}${link(r[2],r[3])}</li>`).join('');
+  const css=`${baseCss}
+.status{max-width:44rem;margin:1rem auto 0;background:linear-gradient(135deg,#3a1d1d,#131a26);border:1px solid #6b2e2e;border-radius:18px;padding:1.1rem 1.2rem;text-align:left}
+.status h2{font-size:1.25rem;line-height:1.25}.status p{color:#d8c4c4;font-size:.9rem;margin-top:.4rem}
+.cd{display:flex;gap:.5rem;margin-top:.9rem}.cd div{background:#0008;border:1px solid #ffffff22;border-radius:12px;padding:.4rem .7rem;text-align:center;min-width:3.6rem}.cd b{font-size:1.5rem;display:block;line-height:1.1}.cd small{font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:#ffffffa0}
+.cdl{font-size:.72rem;color:#d8c4c4;margin-top:.5rem}
+.tl{display:grid;gap:.5rem;padding:0}.tl li{display:flex;gap:.9rem;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:.7rem .9rem;float:none}
+.when{flex:none;width:5.2rem;font-size:.74rem;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}.tl b{color:var(--ink)}.tl p{color:#c5cede;font-size:.86rem;margin-top:.1rem}
+.cols{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))}
+.col{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:.9rem 1rem}.col.o{border-top:4px solid #5aa9ff}.col.p{border-top:4px solid #ff9f5a}
+.col h3{margin:0 0 .5rem}.col ul{gap:.5rem}.col li{background:none;border:0;padding:0;font-size:.88rem;float:none}
+.col a,.tl a,.sc a{color:var(--muted);font-size:.76rem;text-decoration:none}.col a:hover,.tl a:hover,.sc a:hover{color:var(--accent)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:14px}table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.82rem}
+th,td{padding:.55rem .7rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;color:#c5cede}thead th{background:#1a2333;color:var(--accent);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em}tbody th{color:var(--ink);font-weight:700;background:#101722}
+.sc{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:.8rem 1rem}.sc h4{font-size:.98rem}.sc p{color:#c5cede;font-size:.86rem;margin-top:.2rem}
+.note{color:var(--muted);font-size:.78rem;text-align:center}
+main{max-width:52rem}`;
+  const page=`<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Lockout Watch</title><style>${css}</style></head><body>
+<header><a class="back" href="transactions.html">← MLB Transaction Wire</a><div class="kicker">MLB labor talks</div><h1>Lockout <span>Watch</span></h1><p class="sub">Where owners and players stand, what has been offered, the deadlines, and what the reporting says could happen. Updated ${updated?fmt(updated).replace(/^\w+, /,''):''}.</p>
+<div class="status"><h2>${esc(st[0])}</h2><p>${esc(st[1])}${link(st[2],st[3])}</p><div class="cd" id="cd"></div><div class="cdl">until the contract expires (Dec. 1, 11:59 p.m. ET)</div></div></header>
+<main>
+<h3>Key dates</h3><ul class="tl">${deadlines}</ul>
+<h3>Where each side stands</h3><div class="cols"><div class="col o"><h3>Owners / MLB</h3><ul>${pts('OWNERS')}</ul></div><div class="col p"><h3>Players / MLBPA</h3><ul>${pts('PLAYERS')}</ul></div></div>
+<h3>What has been offered</h3><div class="tw"><table><thead><tr><th>Issue</th><th>MLB</th><th>MLBPA</th><th>Where it stands</th></tr></thead><tbody>${offers}</tbody></table></div>
+<h3>Latest news</h3><ul class="tl">${news}</ul>
+<h3>What could happen</h3><div class="cols">${outlook}</div>
+<p class="note">These scenarios summarize published reporting and insider opinion. They are not predictions by this site, and betting-market figures may be out of date.</p>
+<h3>Past stoppages</h3><ul>${hist}</ul>
+</main>
+<footer>Positions are as described by the linked sources; each side disputes the other's characterization. Neutral summary, not an endorsement of either side. Unofficial fan project.</footer>
+<script>(function(){var end=Date.UTC(2026,11,2,4,59,0);function t(){var d=Math.max(0,end-Date.now()),s=Math.floor(d/1000),D=Math.floor(s/86400),H=Math.floor(s%86400/3600),M=Math.floor(s%3600/60),S=s%60;document.getElementById('cd').innerHTML=[[D,'days'],[H,'hrs'],[M,'min'],[S,'sec']].map(function(x){return '<div><b>'+x[0]+'</b><small>'+x[1]+'</small></div>'}).join('')}t();setInterval(t,1000)})();</script>
+</body></html>`;
+  fs.writeFileSync('lockout.html',page);
+  console.log('built lockout.html');
+}
