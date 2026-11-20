@@ -1,4 +1,151 @@
 # Source data. Format: "#YYYY-MM-DD" sets the date, rows are TEAM|PLAYER|TRANSACTION|SOURCE (c=CBS Sports, e=ESPN)
+#2026-11-19
+ATH|Luke Little|Signed to a Minor League Contract|c
+ATH|Wilkin Ramos|Signed to a Minor League Contract|c
+ATH|Joey Wiemer|Signed to a Minor League Contract|c
+ATL|Rowdy Tellez|Signed to Play in Japan (Tohoku Rakuten Golden Eagles)|c
+BAL|Braden Nett|Acquired Off Waivers From Athletics|c
+CHC|Chayce McDermott|Acquired Off Waivers From NY Mets|c
+CHW|Sean Sullivan|Traded From Colorado (for RHP Luis Castillo, four-player deal)|c
+COL|Davis Martin|Traded From Chi. White Sox (for LHP Sean Sullivan, four-player deal)|c
+COL|Luis Castillo|Traded From Chi. White Sox (for LHP Sean Sullivan, four-player deal)|c
+KC|Randy Dobnak|Signed (2027)(avoids arbitration)|c
+MIL|Braden Shewmake|Signed to a Minor League Contract|c
+MIL|Luke Adams|Purchased From Minors|c
+NYM|Darwinzon Hernandez|Signed as Free Agent (2027-2029)(three-year contract)|c
+TB|Jesse Scholtens|Released|c
+TEX|Carter Baumler|Drafted Player Returned to Minors|c
+TOR|Chase Lee|Designated for Assignment|c
+TOR|Christian Cairo|Acquired Off Waivers From Los Angeles|c
+#2026-11-18
+BAL|Alex Carrillo|Signed to a Minor League Contract|c
+BAL|Junior Perez|Signed to a Minor League Contract|c
+BOS|Nick Fortes|Traded From Tampa Bay (for RHP Angel Roa)|c
+BOS|Connor Wong|Designated for Assignment|c
+CHW|Dustin May|Signed as Free Agent (2027-2029)(three-year contract)|c
+CHW|Jordan Leasure|Designated for Assignment|c
+CIN|Dominic Fletcher|Signed to a Minor League Contract|c
+COL|TJ Shook|Signed to a Minor League Contract|c
+KC|Kyle Isbel|Designated for Assignment|c
+KC|Bryce Miller|Traded From Seattle (for 3B Maikel Garcia, six-player deal)|c
+KC|Logan Evans|Traded From Seattle (for 3B Maikel Garcia, six-player deal)|c
+KC|Jose Ferrer|Traded From Seattle (for 3B Maikel Garcia, six-player deal)|c
+LAA|Jace Jung|Traded From Detroit (for cash considerations)|c
+MIN|Sonny Gray|Signed as Free Agent (2027-2028; Opt 2029)(two-year contract)|c
+NYM|Joel Kuhnel|Signed to a Minor League Contract|c
+SEA|James McArthur|Traded From Kansas City (for RHP Bryce Miller, six-player deal)|c
+SEA|Maikel Garcia|Traded From Kansas City (for RHP Bryce Miller, six-player deal)|c
+WAS|Omar Cruz|Signed to a Minor League Contract|c
+#2026-11-17
+ARI|Wellington Aracena|Purchased From Minors|c
+ARI|Druw Jones|Purchased From Minors|c
+ARI|Demetrio Crisantes|Purchased From Minors|c
+ARI|Cristofer Torin|Purchased From Minors|c
+ARI|Ashton Izzi|Purchased From Minors|c
+ARI|Spencer Giesting|Purchased From Minors|c
+ATH|Hayden Juenger|Designated for Assignment|c
+ATH|Yaqui Rivera|Traded From Baltimore (for RHP Josiah Romero)|c
+ATH|Raymond Burgos|Traded From Boston (for RHP Kenya Huggins)|c
+ATH|Yunior Tur|Designated for Assignment|c
+ATH|Cole Conn|Purchased From Minors|c
+ATH|Braden Nett|Designated for Assignment|c
+ATL|Cameron Foster|Acquired Off Waivers From Baltimore|c
+ATL|Cedric De Grandpre|Purchased From Minors|c
+BAL|Zach Morgan|Outrighted to Minors|c
+BAL|Enrique Bradfield|Purchased From Minors|c
+BAL|Rece Hinds|Released|c
+BAL|Braxton Bragg|Purchased From Minors|c
+BAL|Michael Forret|Purchased From Minors|c
+BAL|Nestor German|Purchased From Minors|c
+BAL|Aron Estrada|Purchased From Minors|c
+BAL|Patrick Reilly|Purchased From Minors|c
+BAL|Levi Wells|Purchased From Minors|c
+CHC|Brody McCullough|Purchased From Minors|c
+CHC|Jaxon Wiggins|Purchased From Minors|c
+CHW|Joey Bart|Designated for Assignment|c
+CHW|Jaden Woods|Purchased From Minors|c
+CIN|Carter Graham|Purchased From Minors|c
+CLE|Justin Campbell|Purchased From Minors|c
+CLE|Jaison Chourio|Purchased From Minors|c
+CLE|Kody Huff|Purchased From Minors|c
+COL|Bryant Betancourt|Purchased From Minors|c
+COL|Jackson Cox|Purchased From Minors|c
+COL|Jack Mahoney|Purchased From Minors|c
+DET|Bailey Horn|Signed to a Minor League Contract|c
+DET|Max Anderson|Purchased From Minors|c
+DET|Josue Briceno|Purchased From Minors|c
+DET|Trey Sweeney|Designated for Assignment|c
+DET|Jace Jung|Designated for Assignment|c
+DET|Peyton Graham|Purchased From Minors|c
+DET|Sawyer Gipson-Long|Signed to a Minor League Contract|c
+DET|Matt Vierling|Designated for Assignment|c
+HOU|Jackson Nezuh|Purchased From Minors|c
+HOU|Joey Loperfido|Outrighted to Minors|c
+KC|Nick Mears|Designated for Assignment|c
+KC|Vince Velasquez|Signed to a Minor League Contract|c
+KC|Angel Bastardo|Traded From Boston (for INF Jack Pineda)|c
+KC|Carson Roccaforte|Purchased From Minors|c
+KC|Lucas Braun|Purchased From Minors|c
+LAA|Raudi Rodriguez|Purchased From Minors|c
+LAA|Nelson Rada|Purchased From Minors|c
+LAD|Jake Cousins|Designated for Assignment|c
+LAD|Jackson Ferris|Purchased From Minors|c
+LAD|Adam Serwinowski|Purchased From Minors|c
+LAD|Luke Fox|Purchased From Minors|c
+LAD|Christian Cairo|Designated for Assignment|c
+LAD|Christian Zazueta|Purchased From Minors|c
+MIA|Brandon White|Purchased From Minors|c
+MIA|Juan Matheus|Purchased From Minors|c
+MIA|Eliazar Dishmey|Purchased From Minors|c
+MIL|Tate Kuehner|Purchased From Minors|c
+MIL|Dylan O'Rae|Purchased From Minors|c
+MIL|Jett Williams|Purchased From Minors|c
+MIN|Ryan Jeffers|Accepted Qualifying Offer - Added to Roster|c
+NYM|Jefferson Rojas|Purchased From Minors|c
+NYM|Dylan Ross|Designated for Assignment|c
+NYY|Carlos Lagrange|Purchased From Minors|c
+NYY|Garrett Martin|Purchased From Minors|c
+NYY|Kyle Carr|Purchased From Minors|c
+NYY|Chase Hampton|Acquired Off Waivers From Baltimore|c
+NYY|David Bednar|Accepted Qualifying Offer - Added to Roster|c
+PHI|Bryan Rincon|Purchased From Minors|c
+PHI|Blake Hunt|Signed to a Minor League Contract|c
+PIT|Axiel Plaz|Purchased From Minors|c
+PIT|Mitch Jebb|Purchased From Minors|c
+SD|Tucker Musgrove|Purchased From Minors|c
+SD|Cal Stevenson|Signed to a Minor League Contract|c
+SEA|Bryce Conley|Signed to a Minor League Contract|c
+SF|Henry Lalane|Purchased From Minors|c
+SF|Josh Bostick|Purchased From Minors|c
+SF|Christian Koss|Designated for Assignment|c
+SF|Rowan Wick|Designated for Assignment|c
+STL|Jacob Odle|Purchased From Minors|c
+STL|Max Rajcic|Designated for Assignment|c
+STL|Jesus Baez|Purchased From Minors|c
+TB|Xavier Isaac|Purchased From Minors|c
+TEX|Joshua White|Acquired Off Waivers From Baltimore|c
+TOR|Nolan Perry|Purchased From Minors|c
+TOR|RJ Schreck|Purchased From Minors|c
+WAS|Braxton Roxby|Designated for Assignment|c
+WAS|Carson Palmquist|Designated for Assignment|c
+WAS|Travis Sykora|Purchased From Minors|c
+WAS|Gus Varland|Designated for Assignment|c
+WAS|Philip Abner|Acquired Off Waivers From Baltimore|c
+WAS|Josiah Gray|Designated for Assignment|c
+WAS|Alejandro Rosario|Purchased From Minors|c
+WAS|Jarlin Susana|Purchased From Minors|c
+#2026-11-16
+ATH|Ben Bowden|Signed to a Minor League Contract|c
+BAL|Jose Barrero|Signed to a Minor League Contract|c
+PIT|Chas McCormick|Signed to a Minor League Contract|c
+SEA|Stephen Nogosek|Signed to a Minor League Contract|c
+#2026-11-15
+MIL|Ryan Walker|Traded From San Francisco (for RHPs Blake Holub and Gavin Perry)|c
+NYY|Tim Hill|Signed as Free Agent (2027; Opt 2028)(one-year contract)|c
+PHI|Max Kranick|Signed to a Minor League Contract|c
+#2026-11-14
+MIL|Lyon Richardson|Signed to Play in Korea (SSG Landers)|c
+PHI|Geoff Hartlieb|Signed to a Minor League Contract|c
 #2026-11-13
 BOS|Jake Bauers|Signed as Free Agent (2027-2030)(four-year contract)|c
 LAA|Tyler Heineman|Signed (2027)(avoids arbitration)|c

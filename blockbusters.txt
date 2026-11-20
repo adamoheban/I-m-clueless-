@@ -1,2 +1,3 @@
 # Blockbuster trades. Format: DATE|TEAMS (e.g. LAD,SD)|HEADLINE|DETAILS|SOURCE LABEL|SOURCE URL
 # A trade counts as a blockbuster if it involves a star or All-Star-caliber player, a big multi-year contract, or three or more notable players/prospects changing teams.
+2026-11-18|KC,SEA|Royals and Mariners swap Maikel Garcia and Bryce Miller in six-player deal|Seattle acquired 3B Maikel Garcia and prospects James McArthur and L.P. Langevin; Kansas City got RHPs Bryce Miller, Logan Evans and Jose Ferrer, per CBS and ESPN transaction logs.|ESPN|https://espn.com/mlb/story/_/id/50521866/sources-royals-trade-maikel-garcia-mariners-miller
